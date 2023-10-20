@@ -3,3 +3,99 @@
 @import 'reset';
 @import 'global';
 @import 'media';
+
+.header{
+   padding: 50px 0;
+   &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   } 
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    &__img{
+        padding-right: 15px;
+    }
+    &__title{
+        @extend %rubik-500;
+        font-size: 36px;
+        color: $accent;
+    }
+}
+
+.menu {
+    &__list{
+        display: flex;
+    }
+    &__list-item + .menu__list-item{
+        padding-left: 35px;
+    }
+    &__list-link{
+        color: $accent;
+        @extend %rubik-500;
+        &:hover{
+            color: $link-hover;
+        }
+    }
+}
+
+.user-nav{
+    display: flex;
+    &__link{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__link--search{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: $icon-bg-search;
+    }
+    &__link-box{
+        position: relative;
+        display: flex;
+        margin: 0 20px;
+        background-color: $main-accent-bg;
+        height: 50px;
+        padding: 20px 40px 14px;
+        border-radius: 25px; 
+        &::before {
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 35px;
+                background: #fff;
+                top: 50%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+            }
+    }
+    &__link-box .user-nav__link + .user-nav__link{
+        padding-left: 60px;        
+    }
+    &__link--user-menu{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: $icon-bg-user-menu;
+    }
+    &__num{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: $white;
+        color: $nav-num-color;
+        line-height: 20px;
+        text-align: center;
+        top: -11px;
+        right: -14px;
+        font-size: 10px;
+    }
+}

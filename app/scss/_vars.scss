@@ -1,3 +1,31 @@
 $accent: #436372;
 $default: #66767c;
 $title: #243f4d;
+$link-hover: #1a1a1a;
+$icon-bg-search: #edf1f4;
+$main-accent-bg: #fcd7b6;
+$icon-bg-user-menu: #a3bbc8;
+$white: #fff;
+$nav-num-color: #959ea3;
+
+
+
+%rubik-400 {
+    font-family: 'Rubik-Regular', sans-serif;
+    font-weight: 400;
+}
+
+%rubik-500 {
+    font-family: 'Rubik-Medium', sans-serif;
+    font-weight: 500;
+}
+
+%dmsans-400 {
+    font-family: 'DMSans-Regular', sans-serif;
+    font-weight: 400;
+}
+
+%dmsans-700{
+    font-family: 'DMSans-Bold', sans-serif;
+        font-weight: 700;
+}
