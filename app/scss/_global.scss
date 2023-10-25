@@ -28,3 +28,8 @@ body {
     padding: 0 15px;
 }
 
+a{
+    font-size: 15px;
+    line-height: 25px;
+    @extend %rubik-500;
+}

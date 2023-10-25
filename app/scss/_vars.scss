@@ -10,8 +10,6 @@ $nav-num-color: #959ea3;
 $footer-font-color: #7b7b7b;
 
 
-
-
 %rubik-400 {
     font-family: 'Rubik-Regular', sans-serif;
     font-weight: 400;
@@ -30,4 +28,11 @@ $footer-font-color: #7b7b7b;
 %dmsans-700{
     font-family: 'DMSans-Bold', sans-serif;
         font-weight: 700;
+}
+
+%btn{
+        @extend %rubik-500;
+        border: none;
+        color: $white;
+        cursor: pointer;
 }
