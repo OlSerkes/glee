@@ -33,3 +33,11 @@ a{
     line-height: 25px;
     @extend %rubik-500;
 }
+
+.title {
+    text-align: center;
+    @extend %dmsans-700;
+    font-size: 36px;
+    color: #191919;
+    margin-bottom: 30px;
+}
