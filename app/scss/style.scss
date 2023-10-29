@@ -365,6 +365,7 @@ footer{
         grid-template-columns: repeat(4, 1fr);
         column-gap: 28px;
         row-gap: 40px;
+        margin-bottom: 80px;
     }
     &__item{
         box-shadow: 6px -9px 16px 17px rgba(249, 249, 249, .54);
@@ -388,6 +389,73 @@ footer{
         @extend %dmsans-700;
         font-size: 16px;
         color: $icon-bg-user-menu;
+    }
+}
+
+.categories-info{
+    &__items{
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        margin-bottom: 85px;
+    }
+    &__item{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        padding: 205px 5px 100px 430px;
+        flex: 0 1 50%;
+        width: 870px;
+        max-height: 484px;
+    }
+    &__item + .categories-info__item{
+        margin-left: 30px;
+    }
+    &__item-title{
+        @extend %dmsans-700;
+        font-size: 26px;
+        color: $title;
+        margin-bottom: 30px;
+    }
+    &__item-text{
+        color: $title;
+        margin-bottom: 35px;
+    }
+    &__item-link{
+        @extend %btn;
+        border: 1px solid #b3b7b5;
+        color: #436372;
+        line-height: 60px;
+        padding: 25px 85px 25px 20px;
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            background-image: url("../images/icons/arrow-dark-right.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            width: 22px;
+            height: 9px;
+            top: 50%;
+            left: 135px;
+            transform: translateY(-50%)
+        }
+    }
+}
+
+.categories-video{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    &__popup{
+        margin-bottom: 110px;
+    }
+    &__play{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 185px 0;
     }
 }
 
