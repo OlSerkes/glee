@@ -41,3 +41,26 @@ a{
     color: #191919;
     margin-bottom: 30px;
 }
+
+.filter{
+    &__btns{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+    &__btn{
+        border: none;
+        background-color: transparent;
+        @extend %dmsans-700;
+        font-size: 16px;
+        color: #8b8b8b;
+        transition: all .3s;    
+        &:hover {
+            color: #191919;
+        }
+    }
+    &__btn + .filter__btn{
+        margin-left: 30px;
+    }
+}
