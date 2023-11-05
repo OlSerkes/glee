@@ -212,6 +212,21 @@ footer{
     }
 }
 
+.top{
+    background: $icon-bg-search;
+    &__container{
+        max-width: 475px;
+        margin: 0 auto;
+        padding: 35px 0 30px;
+        text-align: center;
+    }
+    &__title{
+        color: #222933;
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+}
+
 .top-slider{
     &__wrapper{
         background-color: #fcd7b6;
