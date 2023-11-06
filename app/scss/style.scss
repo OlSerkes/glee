@@ -631,8 +631,69 @@ footer{
         justify-content: space-between;
         align-items: center;
     }
+    &__login-block{
+        position: unset;
+        margin-bottom: 0;
+        padding: 80px 0;
+    }
 }
 
+.modal{
+    padding-top: 120px;
+    max-width: 472px;
+    margin: 0 auto 125px;
+    &__label{
+        display: block;
+        margin-bottom: 30px;
+        font-size: 14px;
+        color: $accent;
+    }
+    &__input{
+        display: block;
+        width: 100%;
+        border: 1px solid #f6f6f6;
+        margin-top: 15px;
+        height: 60px;
+        padding: 0 15px;
+    }
+    &__btn{
+        display: block;
+        background-color: $icon-bg-user-menu;
+        color: #fffefe;
+        @extend %rubik-500;
+        font-size: 18px;
+        width: 100%;
+        padding: 20px 0;
+        border: none;
+    }
+    &__login-info{
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        margin: 35px 0 30px;
+        border-bottom: 1px solid #f6f6f6;
+    }
+    &__error{
+        color: $accent;
+        display: inline-block;
+        @extend %rubik-400;
+        font-size: 14px;
+    }
+    &__text{
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+    &__btn-create{
+        border: 1px solid $icon-bg-user-menu;
+        background-color: $white;
+        width: 100%;
+        padding: 20px 0;
+        color: $title;
+        @extend %rubik-500;
+        font-size: 18px;
+    }
+}
 
 
 @import 'media';
